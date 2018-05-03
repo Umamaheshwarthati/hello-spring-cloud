@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
     @Autowired(required = false) DataSource dataSource;
     @Autowired(required = false) RedisConnectionFactory redisConnectionFactory;
-    @Autowired(required = false) MongoDbFactory mongoDbFactory;
+    @Autowired(required = true) MongoDbFactory mongoDbFactory;
     @Autowired(required = false) ConnectionFactory rabbitConnectionFactory;
 
     @Autowired(required = false) ApplicationInstanceInfo instanceInfo;
